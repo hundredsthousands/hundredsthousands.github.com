@@ -37,7 +37,7 @@
 header {
   float: left;
   padding-left: 3em;
-  width: 200px;
+  width: 256px;
   position: relative;
   margin-top: 5vh;
   margin-right: 5vh;
@@ -54,14 +54,14 @@ header {
     margin-left: auto;
     margin-top: 3vh;
     padding-left: 1em;
-    width: 130px;
+    width: 180px;
   }
 
 }
 
 .social {
   float: right;
-  margin-top: 5vh;
+  margin-top: 8vh;
   margin-right: 5vh;
   position: relative;
 
@@ -82,7 +82,7 @@ header {
 
   @media only screen and
   (max-width:520px) {
-    margin-top: 3.5vh;
+    margin-top: 5vh;
     margin-right: 2vh;
 
     li {

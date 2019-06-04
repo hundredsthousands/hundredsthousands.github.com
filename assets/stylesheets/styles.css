@@ -20,33 +20,41 @@ time, mark, audio, video {
   border: 0;
   font-size: 100%;
   font: inherit;
-  vertical-align: baseline; }
+  vertical-align: baseline;
+}
 
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
-  display: block; }
+  display: block;
+}
 
 body {
-  line-height: 1; }
+  line-height: 1;
+}
 
 ol, ul {
-  list-style: none; }
+  list-style: none;
+}
 
 blockquote, q {
-  quotes: none; }
+  quotes: none;
+}
 
 blockquote:before, blockquote:after,
 q:before, q:after {
-  content: '';
-  content: none; }
+  content: "";
+  content: none;
+}
 
 table {
   border-collapse: collapse;
-  border-spacing: 0; }
+  border-spacing: 0;
+}
 
 * {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+}
 
 .video-background {
   background: #000;
@@ -55,7 +63,8 @@ table {
   right: 0;
   bottom: 0;
   left: 0;
-  z-index: -99; }
+  z-index: -99;
+}
 
 .video-foreground,
 .video-background iframe {
@@ -64,21 +73,27 @@ table {
   left: 0;
   width: 100%;
   height: 100%;
-  pointer-events: inherit; }
+  pointer-events: inherit;
+}
 
-@media (min-aspect-ratio: 16 / 9) {
+@media (min-aspect-ratio: 16/9) {
   .video-foreground {
     height: 300%;
-    top: -100%; } }
-@media (max-aspect-ratio: 16 / 9) {
+    top: -100%;
+  }
+}
+@media (max-aspect-ratio: 16/9) {
   .video-foreground {
     width: 300%;
-    left: -100%; } }
+    left: -100%;
+  }
+}
 .container {
   padding-left: auto;
   padding-right: auto;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+}
 
 header {
   float: left;
@@ -86,57 +101,71 @@ header {
   width: 200px;
   position: relative;
   margin-top: 5vh;
-  margin-right: 5vh; }
-  header img {
-    width: 100%; }
-  @media only screen and (max-width: 520px) {
-    header {
-      padding-left: auto;
-      padding-right: auto;
-      margin-right: auto;
-      margin-left: auto;
-      margin-top: 3vh;
-      padding-left: 1em;
-      width: 130px; } }
+  margin-right: 5vh;
+}
+header img {
+  width: 100%;
+}
+@media only screen and (max-width: 520px) {
+  header {
+    padding-left: auto;
+    padding-right: auto;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 3vh;
+    padding-left: 1em;
+    width: 130px;
+  }
+}
 
 .social {
   float: right;
   margin-top: 5vh;
   margin-right: 5vh;
-  position: relative; }
+  position: relative;
+}
+.social li {
+  float: left;
+  padding-right: 1em;
+  padding-left: 1.5em;
+}
+.social img {
+  height: 1em;
+}
+.social a:hover {
+  text-decoration: none;
+  border-bottom: solid 1px #FFF;
+}
+@media only screen and (max-width: 520px) {
+  .social {
+    margin-top: 3.5vh;
+    margin-right: 2vh;
+  }
   .social li {
     float: left;
-    padding-right: 1em;
-    padding-left: 1.5em; }
-  .social img {
-    height: 1em; }
-  .social a:hover {
-    text-decoration: none;
-    border-bottom: solid 1px #FFF; }
-  @media only screen and (max-width: 520px) {
-    .social {
-      margin-top: 3.5vh;
-      margin-right: 2vh; }
-      .social li {
-        float: left;
-        padding-right: 0.5em;
-        padding-left: 1em; } }
+    padding-right: 0.5em;
+    padding-left: 1em;
+  }
+}
 
 .clearfix:before,
 .clearfix:after {
   content: " ";
   /* 1 */
   display: table;
-  /* 2 */ }
+  /* 2 */
+}
 
 .clearfix:after {
-  clear: both; }
+  clear: both;
+}
 
 /**
  * For IE 6/7 only
  * Include this rule to trigger hasLayout and contain floats.
  */
 .clearfix {
-  *zoom: 1; }
+  *zoom: 1;
+}
 
 /*# sourceMappingURL=styles.css.map */

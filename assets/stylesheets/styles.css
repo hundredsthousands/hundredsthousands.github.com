@@ -114,7 +114,7 @@ header img {
     margin-left: auto;
     margin-top: 3vh;
     padding-left: 1em;
-    width: 180px;
+    width: 130px;
   }
 }
 
@@ -138,8 +138,8 @@ header img {
 }
 @media only screen and (max-width: 520px) {
   .social {
-    margin-top: 5vh;
-    margin-right: 2vh;
+    margin-top: 4vh;
+    margin-right: 1vh;
   }
   .social li {
     float: left;

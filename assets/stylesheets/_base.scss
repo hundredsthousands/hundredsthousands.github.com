@@ -1,6 +1,14 @@
 *{
   box-sizing: border-box;
 }
+/* Style the video: 100% width and height to cover the entire window */
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+}
 
 .video-background {
   background: #000;
@@ -41,6 +49,7 @@ header {
   position: relative;
   margin-top: 5vh;
   margin-right: 5vh;
+  z-index: 100;
 
   img {
     width: 100%;
@@ -59,11 +68,51 @@ header {
 
 }
 
+.content {
+  position: fixed;
+  margin: 0 auto;
+  top:50%;
+  color: #f1f1f1;
+  width: 100%;
+  z-index: 100;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 32px;
+
+  h1{
+    position: relative;
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+    line-height: 1.25;
+  }
+
+  .listen-now{
+    display: block;
+    width: 180px;
+    border-radius: 100px;
+    background-color: #fff;
+    color: #555555;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 20px 25px;
+    margin: 20px auto;
+    text-align: center;
+    -webkit-transition: all .15s ease-in-out;
+    -moz-transition: all .15s ease-in-out;
+    -o-transition: all .15s ease-in-out;
+    -ms-transition: all .15s ease-in-out;
+    transition: all .15s ease-in-out;
+  }
+
+
+}
+
 .social {
   float: right;
   margin-top: 8vh;
   margin-right: 5vh;
   position: relative;
+  z-index: 100;
 
   li {
     float: left;
